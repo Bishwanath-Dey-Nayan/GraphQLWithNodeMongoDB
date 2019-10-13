@@ -13,6 +13,7 @@
     "express-graphql": "^0.9.0",
     "graphql": "^14.5.8",
     "lodash": "^4.17.15",
+    "mongoose": "^5.7.4",
     "nodemon": "^1.19.3"
   }
 }
