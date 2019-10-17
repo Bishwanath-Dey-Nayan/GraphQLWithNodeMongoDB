@@ -5,7 +5,10 @@ const mongoose = require('mongoose')
 
 const app = express();
 
-mongoose.connect('mongodb+srv://16103022:n01682616787a@cluster0-ikvfp.mongodb.net/test?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://16103022:n01682616787a@cluster0-ikvfp.mongodb.net/test?retryWrites=true&w=majority',{
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    });
 mongoose.connection.once('open',()=>
 {
     console.log('connected to database');
